@@ -1,5 +1,6 @@
 public class Main {
 
+/*
     public static void main(String[] args) {
 
         //Token script
@@ -9,48 +10,50 @@ public class Main {
 
 
 
+
     }
 
-    public void accessTest;
+    public void accessTest() {
 
-    //try Snow.login();
+        //try Snow.login();
 
-    //catch exception rerun in 10 sec
-    //report();
-    //Close();
+        //catch exception rerun in 10 sec
+        //report();
+        //Close();
 
-    //try AD.login
-    //catch exception rerun in 10 sec
-    //report();
-    //Close();
+        //try AD.login
+        //catch exception rerun in 10 sec
+        //report();
+        //Close();
 
-    //RSA.login()
-    //catch exception rerun in 10 sec
-    //report();
-    //Close();
+        //RSA.login()
+        //catch exception rerun in 10 sec
+        //report();
+        //Close();
 
-    //Outlook.accessApp();
-    //catch exception rerun in 10 sec
-    //report();
-    //Close();
-
-
-
-
-    public void requestProcess;
-
-    //Snow.accessticket():
-    //Snow.userInformation();
-    //AD.emailChecking();
-    //
+        //Outlook.accessApp();
+        //catch exception rerun in 10 sec
+        //report();
+        //Close();
+    }
 
 
+
+    public void requestProcess() {
+
+        //Snow.accessticket():
+        //Snow.userInformation();
+        //AD.emailChecking();
+    }
 
 
 
 
 
 
+
+
+*/
 
 
 

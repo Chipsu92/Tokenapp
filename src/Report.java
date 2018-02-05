@@ -2,23 +2,27 @@ public class Report {
 
 
 
-    public void statistics;
+    public void statistics() {
 
-    // Showing Statistics
+        // Showing Statistics
 
-    public void actionLogScreen;
+    }
+    public void actionLogScreen() {
 
-    //Box showing information
+        //Box showing information
 
-    public void detailedReport;
+    }
+    public void detailedReport() {
 
-    //detailed information after finish
+        //detailed information after finish
 
-    public void savingReport;
+    }
+    public void savingReport() {
 
-    // saving report
+        // saving report
 
-    pubic void
+    }
+
 
 
 

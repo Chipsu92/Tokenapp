@@ -1,25 +1,31 @@
 public class Menu {
 
-    public void drawingMenu;
+    public void drawingMenu() {
 
-    // drawing menu
+        // drawing menu
 
-    public void start;
+    }
+    public void start() {
 
-    //accessTest();
-    //Snow.srtaskCollecting();
-    //RSA.collectingtoken();
-    //requestProcess();
-    public void rerun;
+        //accessTest();
+        //Snow.srtaskCollecting();
+        //RSA.collectingtoken();
+        //requestProcess();
+    }
+    public void rerun() {
 
-    //rerun;
+        //rerun;
 
-    public void statistics;
+    }
 
-    //statistics
+    public void statistics() {
 
-    public void quit;
+        //statistics
 
-    //quit
+    }
+    public void quit() {
 
+        //quit
+
+    }
 }

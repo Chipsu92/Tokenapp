@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class LoginFrame extends Application implements EventHandler<ActionEvent> {
+public class LoginFrame extends Application  {
 
     Button button;
 
@@ -23,7 +23,13 @@ public class LoginFrame extends Application implements EventHandler<ActionEvent>
         primaryStage.setTitle("Token Application");                                                  // Scene is whole content inside Stage
         button = new Button();
         button.setText("Click me");
-        button.setOnAction(this);
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("LOOOOOOOL");
+
+            }
+        });
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
@@ -34,16 +40,5 @@ public class LoginFrame extends Application implements EventHandler<ActionEvent>
 
     }
 
-    @Override
-    public void handle(ActionEvent event) {
 
-        if (event.getSource() == button) {
-
-            System.out.println("Wooooooooaaaaa That's gonna be a good application");
-
-
-        }
-
-
-    }
 }

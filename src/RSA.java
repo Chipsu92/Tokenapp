@@ -1,17 +1,24 @@
 public class RSA {
 
-    public void accessing;
-    //accessing webpage
+    public void accessing() {
+        //accessing webpage
 
-    public void collectingtoken;
+    }
+    public void collectingtoken() {
 
-    //and returning table;
 
-   public void assigningToken;
+        //and returning table;
 
-   //assigning token
+    }
+   public void assigningToken() {
 
-    public void login;
+       //assigning token
 
-    //login to rsa
+   }
+    public void login() {
+
+        //login to rsa
+
+    }
 }
+
