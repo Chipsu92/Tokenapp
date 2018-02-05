@@ -15,21 +15,21 @@ public class LoginFrame extends Application implements EventHandler<ActionEvent>
         launch(args);
 
 
-
     }
 
     @Override
     public void start(Stage primaryStage) {
-                                                                                                           // whole window calls Stage
-             primaryStage.setTitle("Token Application");                                                  // Scene is whole content inside Stage
+        // whole window calls Stage
+        primaryStage.setTitle("Token Application");                                                  // Scene is whole content inside Stage
         button = new Button();
         button.setText("Click me");
-
-        button.setOnAction(script();)
+        button.setOnAction(this);
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
-        Scene scene = new Scene(layout,300, 250);
+
+        Scene scene = new Scene(layout, 300, 250);
+        primaryStage.setScene(scene);
         primaryStage.show();
 
     }
@@ -37,9 +37,13 @@ public class LoginFrame extends Application implements EventHandler<ActionEvent>
     @Override
     public void handle(ActionEvent event) {
 
+        if (event.getSource() == button) {
 
-    }
-    public static void script(){
+            System.out.println("Wooooooooaaaaa That's gonna be a good application");
+
+
+        }
+
 
     }
 }
