@@ -6,10 +6,10 @@ public class RSA {
     }
     public void collectingtoken() {
 
-
         //and returning table;
 
     }
+
    public void assigningToken() {
 
        //assigning token
@@ -21,4 +21,3 @@ public class RSA {
 
     }
 }
-

@@ -12,6 +12,7 @@ public class Report {
         //Box showing information
 
     }
+
     public void detailedReport() {
 
         //detailed information after finish
@@ -22,10 +23,6 @@ public class Report {
         // saving report
 
     }
-
-
-
-
 
 }
 

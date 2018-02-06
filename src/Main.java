@@ -1,15 +1,12 @@
 public class Main {
-
 /*
-    public static void main(String[] args) {
+
+   public static void main(String[] args) {
 
         //Token script
         //**************************************
         //GrabbingCreds();
         //menu();
-
-
-
 
     }
 
@@ -35,8 +32,8 @@ public class Main {
         //catch exception rerun in 10 sec
         //report();
         //Close();
-    }
 
+    }
 
 
     public void requestProcess() {
@@ -44,18 +41,10 @@ public class Main {
         //Snow.accessticket():
         //Snow.userInformation();
         //AD.emailChecking();
+        //
+
     }
-
-
-
-
-
-
-
-
 */
-
-
 
 }
 
