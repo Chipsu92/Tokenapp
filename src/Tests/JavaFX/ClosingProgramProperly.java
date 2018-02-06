@@ -14,7 +14,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-
+//extends WorkingWFrames
 
 
 public class ClosingProgramProperly extends Application {
