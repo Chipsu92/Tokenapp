@@ -1,11 +1,8 @@
-
-
 public class Menu {
 
     public void drawingMenu() {
 
         // drawing menu
-
 
     }
     public void start() {
@@ -14,13 +11,13 @@ public class Menu {
         //Snow.srtaskCollecting();
         //RSA.collectingtoken();
         //requestProcess();
-
     }
     public void rerun() {
 
-        //rerun
+        //rerun;
 
     }
+
     public void statistics() {
 
         //statistics
@@ -31,5 +28,4 @@ public class Menu {
         //quit
 
     }
-
 }
