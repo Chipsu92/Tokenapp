@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 import javafx.application.Application;
@@ -55,6 +56,7 @@ public class Menus21 extends Application {
             if(showLines.isSelected()) {
 
                 System.out.println("Program will now display line numbers...");
+
             } else {
 
                 System.out.println("Hiding line numbers...");
@@ -66,17 +68,26 @@ public class Menus21 extends Application {
         autoSave.setSelected(true);
         helpMenu.getItems().addAll(showLines, autoSave);
 
-
         //disabled button
         MenuItem disabledButton = new MenuItem("Wykurwiaj");
         disabledButton.setOnAction(e -> System.out.println("Wykurwiam"));
         disabledButton.setDisable(true);
         fileMenu.getItems().addAll(disabledButton);
 
+        //Difficulty RadioMenuItems
+        Menu difficultyMenu = new Menu("Difficulty");
+        ToggleGroup difficultyToggle = new ToggleGroup();
+        RadioMenuItem easy = new RadioMenuItem("Easy");
+        RadioMenuItem medium = new RadioMenuItem("Medium");
+        RadioMenuItem hard = new RadioMenuItem("Hard AF");
+        easy.setToggleGroup(difficultyToggle);
+        medium.setToggleGroup(difficultyToggle);
+        hard.setToggleGroup(difficultyToggle);
+        difficultyMenu.getItems().addAll(easy, medium, hard);
 
         //Main menu bar
         MenuBar menuBar = new MenuBar();
-        menuBar.getMenus().addAll(fileMenu, editMenu, helpMenu);
+        menuBar.getMenus().addAll(fileMenu, editMenu, helpMenu,difficultyMenu);
 
         layout = new BorderPane();
         layout.setTop(menuBar);
@@ -86,3 +97,4 @@ public class Menus21 extends Application {
 
     }
 }
+*/

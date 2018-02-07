@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -62,3 +63,4 @@ public class ClosingProgramProperly extends Application {
 
 }
 
+*/

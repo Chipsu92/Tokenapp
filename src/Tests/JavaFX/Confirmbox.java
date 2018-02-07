@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 import javafx.geometry.Pos;
@@ -56,3 +57,4 @@ public class Confirmbox {
     }
 
 }
+*/

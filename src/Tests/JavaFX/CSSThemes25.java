@@ -9,15 +9,19 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class Kraty extends Application {
+public class CSSThemes25 extends Application {
+
     Stage window;
 
     public static void main(String[] args) {
+
         launch(args);
+
     }
 
     @Override
     public void start(Stage primaryStage) {
+
         window = primaryStage;
         window.setTitle("thenewboston - JavaFX");
 
@@ -47,13 +51,20 @@ public class Kraty extends Application {
         //Login
         Button loginButton = new Button("Log In");
         GridPane.setConstraints(loginButton, 1, 2);
+        loginButton.setOnAction(e -> {
+            //set different theme while "log in" button pressed
+            //setUserAgentStylesheet(STYLESHEET_CASPIAN);
+
+        });
 
         //Add everything to grid
         grid.getChildren().addAll(nameLabel, nameInput, passLabel, passInput, loginButton);
 
         Scene scene = new Scene(grid, 300, 200);
+        scene.getStylesheets().add(Viper.css);
         window.setScene(scene);
         window.show();
-    }
 
+
+    }
 }
