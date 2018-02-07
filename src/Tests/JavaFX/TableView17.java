@@ -16,11 +16,11 @@ import javafx.stage.Stage;
 
 
 // CLASS ALCOHOL EXTENDS THIS CLASS
-
 public class TableView17 extends Application {
 
     Stage window;
     TableView<Alcohol> table;
+    TextField nameInput, priceInput, quantityInput;
 
     public static void main(String[] args) {
 
@@ -41,23 +41,43 @@ public class TableView17 extends Application {
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 
         //Price column
-
         TableColumn<Alcohol, Double> priceColumn = new TableColumn<>("Price");
         priceColumn.setMinWidth(200);
         priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
 
         //quantity column
-
         TableColumn<Alcohol, Integer> quantColumn = new TableColumn<>("Quantity");
         quantColumn.setMinWidth(200);
         quantColumn.setCellValueFactory(new PropertyValueFactory<>("quantity"));
+
+        //Name input
+        nameInput = new TextField();
+        nameInput.setPromptText("Name");
+        nameInput.setMinWidth(100);
+        priceInput = new TextField();
+        priceInput.setPromptText("Price");
+        priceInput.setMinWidth(100);
+        quantityInput = new TextField();
+        quantityInput.setPromptText("Quantity");
+        quantityInput.setMinWidth(100);
+
+        //Buttons
+        Button addButton = new Button("Add");
+        addButton.setOnAction(e -> addButtonClicked());
+        Button removeButton = new Button("Remove");
+        removeButton.setOnAction(e -> removeButtonClicked());
+
+        HBox hBox = new HBox();
+        hBox.setPadding(new Insets(10,10,10,10));
+        hBox.setSpacing(10);
+        hBox.getChildren().addAll(nameInput, priceInput, quantityInput, addButton, removeButton);
 
         table = new TableView<>();
         table.setItems(getAlcohol());
         table.getColumns().addAll(nameColumn, priceColumn, quantColumn);
 
         VBox vBox = new VBox();
-        vBox.getChildren().addAll(table);
+        vBox.getChildren().addAll(table, hBox);
 
 
         Scene scene = new Scene(vBox);
@@ -77,4 +97,23 @@ public class TableView17 extends Application {
         return alcohol;
 
     }
+
+    public void addButtonClicked() {
+
+        Alcohol alcohol = new Alcohol();
+        alcohol.setName(nameInput.getText());
+        alcohol.setPrice(Double.parseDouble(priceInput.getText()));
+        alcohol.setQuantity(Integer.parseInt(quantityInput.getText()));
+        table.getItems().add(alcohol);
+        nameInput.clear();
+        priceInput.clear();
+        quantityInput.clear();
+
+    }
+
+    public void removeButtonClicked() {
+
+
+    }
+
 }

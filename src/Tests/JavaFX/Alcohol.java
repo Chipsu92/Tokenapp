@@ -37,5 +37,13 @@ public class Alcohol {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public Alcohol(){
+
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+
+    }
 }
 
