@@ -22,17 +22,61 @@ public class Menus21 extends Application {
         window = primaryStage;
         window.setTitle("Title");
 
-        //FIle Menu
-        Menu fileMenu = new Menu("File");
+        //File Menu
+        Menu fileMenu = new Menu("_File");
 
         //Menu items
-        fileMenu.getItems().add(new MenuItem("New Project..."));
-        fileMenu.getItems().add(new MenuItem("New Module..."));
+        MenuItem newFile = new MenuItem("New...");
+        newFile.setOnAction(e -> System.out.println("You clicked new Button"));
+        fileMenu.getItems().addAll(newFile);
+
+        fileMenu.getItems().add(new MenuItem("New..."));
+        fileMenu.getItems().add(new MenuItem("Open..."));
+        fileMenu.getItems().add(new MenuItem("Save..."));
+        //Separator
+        fileMenu.getItems().addAll(new SeparatorMenuItem());
+        //*********
         fileMenu.getItems().add(new MenuItem("Settings..."));
+        fileMenu.getItems().add(new MenuItem("Exit"));
+
+        //Edit menu
+        Menu editMenu = new Menu("_Edit");
+        editMenu.getItems().add(new MenuItem("Copy"));
+        editMenu.getItems().add(new MenuItem("Paste"));
+        editMenu.getItems().addAll(new SeparatorMenuItem());
+        editMenu.getItems().add(new MenuItem("Find"));
+        editMenu.getItems().add(new MenuItem("Macros"));
+
+        //Help menu
+        Menu helpMenu = new Menu("Help");
+        CheckMenuItem showLines = new CheckMenuItem("Show Line Numbers");
+        showLines.setOnAction(e -> {
+            //checked if selected
+            if(showLines.isSelected()) {
+
+                System.out.println("Program will now display line numbers...");
+            } else {
+
+                System.out.println("Hiding line numbers...");
+            }
+
+        });
+        //Selected by default
+        CheckMenuItem autoSave = new CheckMenuItem("Enable autosave");
+        autoSave.setSelected(true);
+        helpMenu.getItems().addAll(showLines, autoSave);
+
+
+        //disabled button
+        MenuItem disabledButton = new MenuItem("Wykurwiaj");
+        disabledButton.setOnAction(e -> System.out.println("Wykurwiam"));
+        disabledButton.setDisable(true);
+        fileMenu.getItems().addAll(disabledButton);
+
 
         //Main menu bar
         MenuBar menuBar = new MenuBar();
-        menuBar.getMenus().addAll(fileMenu);
+        menuBar.getMenus().addAll(fileMenu, editMenu, helpMenu);
 
         layout = new BorderPane();
         layout.setTop(menuBar);
