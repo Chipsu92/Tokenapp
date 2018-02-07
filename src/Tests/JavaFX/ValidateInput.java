@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -90,3 +91,4 @@ public class ValidateInput extends Application  {
 
 
 
+*/
