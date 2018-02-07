@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 public class Alcohol {
@@ -47,3 +48,4 @@ public class Alcohol {
     }
 }
 
+*/

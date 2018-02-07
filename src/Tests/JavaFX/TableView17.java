@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 import javafx.application.Application;
@@ -113,7 +114,12 @@ public class TableView17 extends Application {
 
     public void removeButtonClicked() {
 
+        ObservableList<Alcohol> alcoholSelected, allAlcohols;
+        allAlcohols = table.getItems();
+        alcoholSelected = table.getSelectionModel().getSelectedItems();
+        alcoholSelected.forEach(allAlcohols::remove);
 
     }
 
 }
+*/
