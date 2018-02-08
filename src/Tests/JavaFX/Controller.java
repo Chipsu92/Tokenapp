@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 import javafx.application.Application;
@@ -15,9 +16,9 @@ public class Controller extends Application  {
 
     @Override
     public void start(Stage primaryStage) {
-
         Parent root = FXMLLoader.load(getClass().getResource("FXML31.fxml"));
         primaryStage
 
     }
 }
+*/

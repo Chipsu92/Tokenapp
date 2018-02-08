@@ -1,3 +1,4 @@
+/*
 package Tests.JavaFX;
 
 import javafx.application.Application;
@@ -68,3 +69,4 @@ public class CSSThemes25 extends Application {
 
     }
 }
+*/
