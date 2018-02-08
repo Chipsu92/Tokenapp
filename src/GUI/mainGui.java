@@ -1,10 +1,14 @@
 package GUI;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
+
 
 public class mainGui extends Application {
 
@@ -16,21 +20,12 @@ public class mainGui extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
-
-        window = primaryStage;
-        window.setTitle("TokenAPP ver 1.0");
-
-        AnchorPane anchorPane = new AnchorPane();
-
-        Button button = new Button("start");
+    public void start(Stage primaryStage) throws Exception {
 
 
-        Scene scene = new Scene(anchorPane, 600, 400);
-        scene.getStylesheets().add();
-        window.setScene(scene);
-        window.show();
-
+        Parent root = FXMLLoader.load(getClass().getResource("BasicApplication.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
 
     }
 }

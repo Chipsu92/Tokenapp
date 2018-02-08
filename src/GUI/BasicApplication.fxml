@@ -9,7 +9,8 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="900.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "GUI.Controller">
+
    <padding>
       <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
    </padding>
@@ -22,7 +23,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </Label>
-      <Button layoutX="9.0" layoutY="110.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" style="-fx-background-color: linear gradient(#dc9656, #ab4642" text="Start">
+      <Button layoutX="9.0" layoutY="110.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0"  text="Start">
          <font>
             <Font size="18.0" />
          </font>
