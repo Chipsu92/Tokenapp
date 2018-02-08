@@ -23,7 +23,8 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </Label>
-      <Button layoutX="9.0" layoutY="141.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Start" fx:id = "startButton">
+      <Button layoutX="9.0" layoutY="141.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Start" fx:id = "startButton"
+        onAction="#handleButtonClick">
          <font>
             <Font size="18.0" />
          </font>
@@ -31,7 +32,8 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </Button>
-      <Button layoutX="9.0" layoutY="238.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Statistics " fx:id = "statisticButton">
+      <Button layoutX="9.0" layoutY="238.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Statistics " fx:id = "statisticButton"
+              onAction="#handleButtonClick">>
          <font>
             <Font size="18.0" />
          </font>
@@ -39,7 +41,8 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </Button>
-      <Button layoutX="9.0" layoutY="338.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Exit" fx:id = "exitButton">
+      <Button layoutX="9.0" layoutY="338.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="136.0" text="Exit" fx:id = "exitButton"
+              onAction="#handleButtonClick">>
          <font>
             <Font size="18.0" />
          </font>
@@ -55,7 +58,8 @@
          </opaqueInsets>
       </TextArea>
       <TextArea layoutX="161.0" layoutY="400.0" prefHeight="260.0" prefWidth="986.0" promptText="ActionBox" style="-fx-background-color: #888888;" fx:id = "eventArea" />
-      <Button layoutX="14.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="Sign in" fx:id = "signinButton">
+      <Button layoutX="14.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="Sign in" fx:id = "signinButton"
+              onAction="#handleButtonClick">>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
