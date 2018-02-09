@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ac525c7-5876-4cfe-8bf1-7192509de5fd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GUI/PrvController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GUI/StandardController.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/BasicApplication.fxml" afterPath="$PROJECT_DIR$/src/GUI/BasicApplication.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Controller.java" afterPath="$PROJECT_DIR$/src/GUI/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/PRVGUI/BasicApplication.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/PRVGUI/BasicApplication_css.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Signin gui/BasicApplication.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/Signin gui/BasicApplication_css.fxml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/GUI/mainGui.java" afterPath="$PROJECT_DIR$/src/GUI/mainGui.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +19,8 @@
           <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="62" column="59" lean-forward="true" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+                <state relative-caret-position="393">
+                  <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -631,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518135476638</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Last for 06/02">
+      <created>1518137587676</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1518137587676</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1140,8 +1138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="62" column="59" lean-forward="true" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+        <state relative-caret-position="393">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="392.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PrvController">
+  <children>
+    <Label layoutX="32.0" layoutY="42.0" prefHeight="32.0" prefWidth="333.0" text="Please provide me with Privilege account credentials">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label layoutX="162.0" layoutY="131.0" prefHeight="17.0" prefWidth="82.0" text="Username">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Label>
+    <Label layoutX="162.0" layoutY="248.0" prefHeight="19.0" prefWidth="60.0" text="Password">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Label>
+    <Button layoutX="115.0" layoutY="360.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="163.0" text="Submit"
+    fx:id="submitButton">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Button>
+    <PasswordField layoutX="71.0" layoutY="283.0" prefHeight="32.0" prefWidth="242.0" fx:id="passwordField" />
+    <TextField layoutX="72.0" layoutY="160.0" prefHeight="32.0" prefWidth="242.0" fx:id="textField" />
+  </children>
+</AnchorPane>
