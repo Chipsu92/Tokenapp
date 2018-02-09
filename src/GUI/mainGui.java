@@ -25,6 +25,8 @@ public class mainGui extends Application {
 
         //Calling fxml file
         Parent root = FXMLLoader.load(getClass().getResource("BasicApplication.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("Token distribution App, I am the god");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 

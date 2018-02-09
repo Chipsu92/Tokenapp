@@ -1,7 +1,24 @@
 package GUI;
 
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 /*
 fx:id = "anchorPane" - AnchorPane
@@ -32,8 +49,28 @@ public class Controller {
 
         startButton.setOnAction(e -> System.out.println("Magic"));
         statisticButton.setOnAction(e -> System.out.println("statistics"));
-        signinButton.setOnAction(e -> System.out.println("sign in"));
         exitButton.setOnAction(e -> Platform.exit());
+
+    }
+
+    public void handleSignInClick() {
+
+        //handles sign in button click
+        signinButton.setOnAction(e -> {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("StandardSignGUI.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("Standard account login screen");
+            stage.setScene(new Scene(root1));
+            stage.show();
+
+
+
+        });
+
+
 
     }
 }
