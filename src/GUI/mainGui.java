@@ -23,6 +23,7 @@ public class mainGui extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+
         //Calling fxml file
         Parent root = FXMLLoader.load(getClass().getResource("BasicApplication.fxml"));
         Stage stage = new Stage();
@@ -31,5 +32,13 @@ public class mainGui extends Application {
         primaryStage.show();
 
 
+
     }
+
+
+
+
+
+
+
 }
