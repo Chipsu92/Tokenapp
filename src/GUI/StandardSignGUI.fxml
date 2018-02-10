@@ -28,12 +28,12 @@
          </font>
       </Label>
       <Button layoutX="115.0" layoutY="360.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="163.0" text="Submit"
-      fx:id="submitButton" onAction="#HandleSubmitButton">
+      fx:id="submitButton" onAction="#handleSubmitButton">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
       <PasswordField layoutX="71.0" layoutY="283.0" prefHeight="32.0" prefWidth="242.0" fx:id="passwordField" />
-      <TextField layoutX="72.0" layoutY="160.0" prefHeight="32.0" prefWidth="242.0" fx:id="textField" />
+      <TextField layoutX="72.0" layoutY="160.0" prefHeight="32.0" prefWidth="242.0" fx:id="textField"  />
    </children>
 </AnchorPane>
