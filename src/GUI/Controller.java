@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 //Controls BasicApplication
-public class Controller  {
+public class Controller   {
 
     @FXML TextArea eventArea;
     public Button startButton;
@@ -26,6 +26,7 @@ public class Controller  {
     public Button signinButton;
     private String eventAreaHolder = "";
     private String eventAreaText;
+
 
 
     public void setEventAreaText(String eventAreaText) {
