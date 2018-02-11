@@ -28,16 +28,17 @@ public class Controller   {
     public Button exitButton;
     public Button signinButton;
     private String eventAreaHolder = "";
-    private String eventAreaText;
+    //private String eventAreaText;
 
-
-    public void setEventAreaText(String eventAreaText) {
-        this.eventAreaText = eventAreaText;
+    public void settingAreaText(String eventAreaText) {
 
         String timeStamp = new SimpleDateFormat("dd/MM/yy HH:mm:ss").format(Calendar.getInstance().getTime());
         eventAreaHolder += "\n" + timeStamp + ":   " + eventAreaText;
-        eventArea.setText(eventAreaHolder);
+        passingTextToTextField();
+    }
+    public void passingTextToTextField() {
 
+        eventArea.setText(eventAreaHolder);
     }
 
     //handle start button
@@ -54,10 +55,11 @@ public class Controller   {
     // handle statistics button
     public void handleStatisticsButton() {
 
-        System.out.println("statistics");
-        setEventAreaText("Test");
 
-    }
+        System.out.println("statistics");
+
+
+        }
 
     //handle exit button
     public void handleExitButton() {
@@ -80,6 +82,8 @@ public class Controller   {
             Scene scene = new Scene(layout, 420,100);
             areYouSure.setScene(scene);
             areYouSure.show();
+
+        // TODO: 11.02.2018 set on closing request
     }
      //initialize Loginscreen
     public void handleSignInClick() throws IOException {
@@ -91,13 +95,15 @@ public class Controller   {
     }
 
     //Call Primary Stage
-    public void handleMainStageInitialization() throws IOException  {
+       public Stage handleMainStageInitialization() throws IOException  {
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Token Application ");
         Parent root = FXMLLoader.load(getClass().getResource("BasicApplication.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
+        return primaryStage;
     }
+
 
 }

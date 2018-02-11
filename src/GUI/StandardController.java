@@ -4,7 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
@@ -15,6 +14,7 @@ public class StandardController  {
 
 
     @FXML TextField textField;
+    @FXML private javafx.scene.control.Button submitButton;
     @FXML PasswordField passwordField;
 
     static boolean ifSignedIn = false;  // TODO: 10.02.2018 boolean change to true after successful attempt to login to snow and token site
@@ -48,15 +48,16 @@ public class StandardController  {
     }
 
     //Call Standard Login screen
-    public void standardLoginSceen() throws IOException {
+    public Stage standardLoginSceen() throws IOException {
 
-        Stage standardStage = new Stage();
-        standardStage.setTitle("Standard Login Screen");
-        Parent root = FXMLLoader.load(getClass().getResource("StandardSignGui.fxml"));
-        standardStage.initModality(Modality.APPLICATION_MODAL);
-        standardStage.setScene(new Scene(root));
-        standardStage.show();
+            Stage standardStage = new Stage();
+            standardStage.setTitle("Standard Login Screen");
+            Parent root = FXMLLoader.load(getClass().getResource("StandardSignGui.fxml"));
+            standardStage.initModality(Modality.APPLICATION_MODAL);
+            standardStage.setScene(new Scene(root));
+            standardStage.show();
 
+            return standardStage;
 
     }
 
@@ -71,6 +72,11 @@ public class StandardController  {
         //Collecting and setting password into standardPasswordHolder
         String password = passwordField.getText();
         setStandardPasswordHolder(password);
+
+        //Closing Login stage
+        Stage stage = (Stage) submitButton.getScene().getWindow();
+        System.out.println("test");
+        stage.close();
 
      }
 
