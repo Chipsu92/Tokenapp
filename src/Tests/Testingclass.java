@@ -4,12 +4,19 @@ import java.awt.*;
 import java.awt.Menu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Testingclass{
 
+
+
     public static void main(String[] args) {
 
-         new SimpleJbutton("Standard");
+         */
+/*new SimpleJbutton("Standard");
          new SimpleJbutton("Privileged");
 
         }
@@ -54,8 +61,13 @@ public class Testingclass{
                 }
             });
 
-        }
+        }*//*
 
-        }
 
-}*/
+
+        String timeStamp = new SimpleDateFormat("dd/MM/yy HH:mm:ss").format(Calendar.getInstance().getTime());
+        System.out.println(timeStamp);
+    }
+
+}
+*/

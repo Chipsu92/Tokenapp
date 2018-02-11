@@ -15,6 +15,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 //Controls BasicApplication
 public class Controller   {
@@ -28,12 +31,11 @@ public class Controller   {
     private String eventAreaText;
 
 
-
     public void setEventAreaText(String eventAreaText) {
         this.eventAreaText = eventAreaText;
 
-        eventAreaHolder += "\n" + eventAreaText;
-        eventAreaHolder.trim();
+        String timeStamp = new SimpleDateFormat("dd/MM/yy HH:mm:ss").format(Calendar.getInstance().getTime());
+        eventAreaHolder += "\n" + timeStamp + ":   " + eventAreaText;
         eventArea.setText(eventAreaHolder);
 
     }
@@ -53,6 +55,7 @@ public class Controller   {
     public void handleStatisticsButton() {
 
         System.out.println("statistics");
+        setEventAreaText("Test");
 
     }
 
@@ -83,6 +86,7 @@ public class Controller   {
 
         StandardController initialize = new StandardController();
         initialize.standardLoginSceen();
+
 
     }
 

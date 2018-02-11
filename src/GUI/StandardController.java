@@ -1,6 +1,5 @@
 package GUI;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +16,7 @@ public class StandardController  {
 
     @FXML TextField textField;
     @FXML PasswordField passwordField;
+
     static boolean ifSignedIn = false;  // TODO: 10.02.2018 boolean change to true after successful attempt to login to snow and token site
     static String standardUsernameHolder;
     static String standardPasswordHolder;
@@ -57,12 +57,12 @@ public class StandardController  {
         standardStage.setScene(new Scene(root));
         standardStage.show();
 
+
     }
 
     //Handles Submit button
     public void handleSubmitButton () {
 
-        setIfSignedIn(true);
 
         //Collecting and setting username into standardUsernameHolder
         String usernName = textField.getText();
