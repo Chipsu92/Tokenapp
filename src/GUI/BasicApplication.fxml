@@ -57,7 +57,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </opaqueInsets>
       </TextArea>
-      <TextArea layoutX="161.0" layoutY="400.0" prefHeight="260.0" prefWidth="986.0" promptText="ActionBox" style="-fx-background-color: #888888;" fx:id = "eventArea"/>
+      <TextArea layoutX="161.0" layoutY="400.0" prefHeight="260.0" prefWidth="986.0" promptText="ActionBox" style="-fx-background-color: #888888;"  fx:id = "eventArea"/>
       <Button layoutX="14.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="93.0" text="Sign in" fx:id = "signinButton"
               onAction="#handleSignInClick">>
          <padding>

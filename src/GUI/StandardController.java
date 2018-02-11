@@ -12,7 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-public class StandardController {
+public class StandardController  {
 
 
     @FXML TextField textField;
@@ -60,7 +60,7 @@ public class StandardController {
     }
 
     //Handles Submit button
-    public void handleSubmitButton() {
+    public void handleSubmitButton () {
 
         setIfSignedIn(true);
 
@@ -72,11 +72,7 @@ public class StandardController {
         String password = passwordField.getText();
         setStandardPasswordHolder(password);
 
-
-
-
-
-    }
+     }
 
 }
 

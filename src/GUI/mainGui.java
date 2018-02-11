@@ -20,6 +20,7 @@ public class mainGui extends Application {
      Controller initialize = new Controller();
      initialize.handleMainStageInitialization();
 
+
     }
 
 }

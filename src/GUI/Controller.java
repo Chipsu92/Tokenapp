@@ -10,29 +10,37 @@ import javafx.scene.control.Button;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
 //Controls BasicApplication
-public class Controller {
+public class Controller  {
 
     @FXML TextArea eventArea;
     public Button startButton;
     public Button statisticButton;
     public Button exitButton;
     public Button signinButton;
+    private String eventAreaHolder = "";
+    private String eventAreaText;
 
+
+    public void setEventAreaText(String eventAreaText) {
+        this.eventAreaText = eventAreaText;
+
+        eventAreaHolder += "\n" + eventAreaText;
+        eventAreaHolder.trim();
+        eventArea.setText(eventAreaHolder);
+
+    }
 
     //handle start button
     public void handleStartButton() {
 
-        eventArea.setText("Test");
-
+        //Checking is signed in
         if (StandardController.isIfSignedIn()) {
 
             System.out.println("Magic");
@@ -44,7 +52,7 @@ public class Controller {
     public void handleStatisticsButton() {
 
         System.out.println("statistics");
-        eventArea.setText("Stats");
+
     }
 
     //handle exit button
@@ -77,14 +85,8 @@ public class Controller {
 
     }
 
-    //Handle event area
-
-    public void handleEventArea () {
-
-
-    }
     //Call Primary Stage
-    public void handleMainStageInitialization() throws IOException {
+    public void handleMainStageInitialization() throws IOException  {
         Stage primaryStage = new Stage();
         primaryStage.setTitle("Token Application ");
         Parent root = FXMLLoader.load(getClass().getResource("BasicApplication.fxml"));
@@ -92,4 +94,5 @@ public class Controller {
         primaryStage.show();
 
     }
+
 }
